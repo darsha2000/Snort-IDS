@@ -1,4 +1,4 @@
-# Snort-IDS/IPS
+# Snort-IDS(-v 2.x)
 Snort is an open-source network intrusion detection and prevention system (IDS/IPS). It analyzes network traffic in real-time, allowing security professionals to detect and block malicious activity. Snort is widely used in cybersecurity to monitor networks for suspicious activities, including attacks, policy violations, and other unauthorized behaviors.
 
 ## Diagram
