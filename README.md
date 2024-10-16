@@ -38,4 +38,11 @@ Snort is an open-source network intrusion detection and prevention system (IDS/I
 - u will now see the alert message in ubuntu server
 - we can change $HOME_NET to a certain ip of metasploitable 2 machine
 - these are some of alert i have used and tested the alerts
-  
+<br>```alert tcp any any -> <dest IP> 22 (msg:"SSH Authentication attempt ";sid:1000002; rev:1;)```<br>
+```alert tcp any any -> $HOME_NET 80 (msg:"HTTP GET Request Detected"; "sid:1000003; rev:1;)```
+<br>
+
+### step 3
+- download  community rules from snort website
+- unzip the community rules and open the rules
+- copy the 
