@@ -19,6 +19,8 @@ Snort is an open-source network intrusion detection and prevention system (IDS/I
 - before we run we should configure the snort config file
 - command
   <br>```sudo vim /etc/snort/snort.conf```
+- to check if snort.conf give any error use the command
+  ```sudo snort -c /etc/snort/snort.conf -T```<br>
 - in the config file, we should make some changes we should change the HOME_NET to our subnet
 - and save
 - there will be local.rules file for use to customize the rule or alerts of our own
@@ -37,12 +39,15 @@ Snort is an open-source network intrusion detection and prevention system (IDS/I
 - ping in kali machine using metasploitable 2 ip
 - u will now see the alert message in ubuntu server
 - we can change $HOME_NET to a certain ip of metasploitable 2 machine
-- these are some of alert i have used and tested the alerts
+- these are some of alerts i have used and tested alerts
 <br>```alert tcp any any -> <dest IP> 22 (msg:"SSH Authentication attempt ";sid:1000002; rev:1;)```<br>
 ```alert tcp any any -> $HOME_NET 80 (msg:"HTTP GET Request Detected"; "sid:1000003; rev:1;)```
 <br>
 
 ### step 3
-- download  community rules from snort website
+- download  community rules from Snort website
 - unzip the community rules and open the rules
-- copy the 
+- copy any of the community rules and paste to local.rules
+- and run
+- we can see all the log files in /var/log
+
