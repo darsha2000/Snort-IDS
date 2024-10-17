@@ -36,6 +36,11 @@ Snort is an open-source network intrusion detection and prevention system (IDS/I
 - for icmp detection<br> ```alert icmp any any  -> $HOME_NET any("ICMp detected "; sid:1000001 ; rev:1;)```
 - now run snort using the command
   <br>```sudo snort -q -l /var/log/snort -i ens -A console -c /etc/snort/snort.conf```
+  <br>-q is for quick start
+  <br>-l is where the log file will be stored
+ <br> -i is interface
+  <br>-A is alert it have console for real logs fast and quick options so we can analysis the log which are stored
+ <br> -c is configuration file is stored
 - ping in kali machine using metasploitable 2 ip
 - u will now see the alert message in ubuntu server
 - we can change $HOME_NET to a certain ip of metasploitable 2 machine
